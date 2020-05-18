@@ -1,10 +1,10 @@
-schema: schema.js
+schema: schema.ts
 require:
   - ts-node/register
 watch:
-  - ./*.js
+  - ./**/*.ts
 overwrite: true
 generates:
-  src/graph/gen-types.ts:
+  generatedTypes.ts:
     plugins:
       - typescript
