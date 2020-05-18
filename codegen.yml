@@ -1,0 +1,10 @@
+schema: src/graph/schema.ts
+require:
+  - ts-node/register
+watch:
+  - src/graph/nodes/**/*.ts
+overwrite: true
+generates:
+  src/graph/gen-types.ts:
+    plugins:
+      - typescript
