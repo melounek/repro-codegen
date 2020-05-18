@@ -1,9 +1,23 @@
 {
-  "name": "cgWatch",
+  "name": "cgwatch",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "codegen": "graphql-codegen",
+    "start": "nodemon src/index.ts"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "@graphql-codegen/cli": "^1.13.5",
+    "@graphql-codegen/introspection": "^1.13.5",
+    "@graphql-codegen/typescript": "^1.13.5",
+    "@graphql-codegen/typescript-resolvers": "^1.13.5",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

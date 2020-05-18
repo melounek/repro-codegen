@@ -1,8 +1,8 @@
-schema: src/graph/schema.ts
+schema: schema.js
 require:
   - ts-node/register
 watch:
-  - src/graph/nodes/**/*.ts
+  - ./*.js
 overwrite: true
 generates:
   src/graph/gen-types.ts:
