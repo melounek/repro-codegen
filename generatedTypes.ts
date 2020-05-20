@@ -9,17 +9,12 @@ export type Scalars = {
 };
 
 export type Query = {
-   __typename?: 'Query';
-  thisIsHotUpdating?: Maybe<IsHotUpdating>;
-  thisIsNOThotUpdating?: Maybe<IsNoThotUpdating>;
+  __typename?: 'Query';
+  myQuery?: Maybe<MyType>;
+  myQuery2?: Maybe<MyType>;
 };
 
-export type IsHotUpdating = {
-   __typename?: 'IsHotUpdating';
-  name?: Maybe<Scalars['String']>;
-};
-
-export type IsNoThotUpdating = {
-   __typename?: 'IsNOThotUpdating';
+export type MyType = {
+  __typename?: 'MyType';
   name?: Maybe<Scalars['String']>;
 };

@@ -1,17 +1,10 @@
-import { GraphQLObjectType, GraphQLString, GraphQLSchema } from "graphql";
-import { thisIsNOThotUpdating } from "./thisIsNOThotUpdating";
-
-const thisIsHotUpdating = {
-  type: new GraphQLObjectType({
-    name: "IsHotUpdating",
-    fields: () => ({ name: { type: GraphQLString } }),
-  }),
-  resolve: () => {},
-};
+import { GraphQLObjectType, GraphQLSchema } from "graphql";
+import { myQuery } from "./myQuery";
+import { myQuery2 } from "./myQuery2";
 
 const query = new GraphQLObjectType({
   name: "Query",
-  fields: () => ({ thisIsHotUpdating, thisIsNOThotUpdating }),
+  fields: () => ({ myQuery, myQuery2 }),
 });
 
 export default new GraphQLSchema({ query });
